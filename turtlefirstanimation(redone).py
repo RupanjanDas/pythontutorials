@@ -1,0 +1,98 @@
+from turtle import *
+speed(0)
+# nuke
+gotovar = 200
+colormode(255)
+pencolor(0,0,255)
+fillcolor(0,0,255)
+for firv1 in range(24):
+    ht()
+    speed(0)
+    begin_fill()
+    lt(180)
+    pu()
+    goto(0,gotovar)
+    pd()
+    lt(120)
+    fd(20)
+    lt(120)
+    fd(20)
+    lt(30)
+    rt(90)
+    for firv2 in range(3):
+        lt(90)
+        fd(20)
+    end_fill()    
+    clearscreen()
+    gotovar = gotovar - 20
+    
+# blast
+colormode(255)
+pencolor(250,250,0)
+fillcolor(250,250,0)
+bgcolor(250,250,0)
+radius = 20
+pu()
+goto(radius,-250)
+pd()
+lt(90)
+bgcolor(255,255,255)
+for firv3 in range(5):
+    speed(0)
+    begin_fill()
+    for firv4 in range(4):
+        speed(0)
+        lt(36)        
+        fd(radius)
+    lt(216.125)
+    radius = radius * 1.5
+    goto(radius,-250)
+    end_fill()
+colormode(255)
+bgcolor(250,250,0)
+pu()
+pd()
+pu()
+pd()
+clearscreen()
+colormode(255)
+bgcolor(255,255,255)
+#mushroomcloud
+colormode(255)
+fillcolor(150,100,100)
+pencolor(150,100,100)
+pu()
+goto(-150,-250)
+pd()
+lt(72)
+begin_fill()
+for firv5 in range(5):
+    speed(0)
+    fd(100)
+    rt(36)
+end_fill()    
+pu()
+goto(-75,-150)
+pd()
+lt(198)
+begin_fill()
+for firv6 in range(3):
+    speed(0)
+    fd(75)
+    lt(18)
+lt(216)
+fd(300)
+lt(216)
+for firv7 in range(3):
+    speed(0)
+    lt(18)
+    fd(75)
+end_fill()    
+goto(70,0)
+rt(90)
+begin_fill()
+for firv8 in range(10):
+    fd(125)
+    rt(36)
+end_fill()    
+    
