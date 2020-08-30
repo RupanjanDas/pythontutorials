@@ -17,6 +17,7 @@ def ispalindrome (s):
         i = i + 1
         j = j - 1
     return True
+print("This program checks if a word is Palindrome or not")
 a = input("enter a word:")
 b = input("enter a word:")
 print(ispalindrome(a))   
