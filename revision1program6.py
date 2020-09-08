@@ -3,10 +3,10 @@ e = len(x)
 i = 0
 while i < e:
     j = i + 1
-    while j < eZ:
+    while j < e:
         if x[i] > x[j]:
-            t = x[i]
+            a = x[i]
             x[i] = x[j]
-            x[j] = t
+            x[j] = a
         j += 1    
     i += 1
